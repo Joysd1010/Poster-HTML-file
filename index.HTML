@@ -10,6 +10,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,166 +20,300 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sample Show from -Redwan Ahmed & Joy Sd</title>
   </head>
-  <body class="bg-blue-950 bg-cover">
+  <body class="bg-blue-950 bg-cover pb-10">
     <header class="text-center py-10 px-4">
-      <h1 class="text-2xl md:text-4xl font-bold text-white">
-        Welcome to Our Web Service
-      </h1>
+        <h1 class="text-4xl md:text-6xl font-bold text-white glitch" data-text="Welcome to Our Web Service">Welcome to Our Web Service</h1>
+
+        <style>
+          .glitch {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-family: monospace;
+            text-shadow: 0 0 0 white;
+          }
+          .glitch::before, .glitch::after {
+            content: attr(data-text); /* Use the data-text attribute content */
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 0;
+            animation: glitch 2s infinite;
+          }
+          .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 red;
+            animation-delay: 0s;
+            animation-direction: reverse;
+          }
+          .glitch::after {
+            left: -2px;
+            text-shadow: 2px 0 blue;
+            animation-delay: 0.5s;
+            animation-direction: reverse;
+          }
+          @keyframes glitch {
+            0% {
+              clip: rect(0, 1200px, 0, 0);
+            }
+            5% {
+              clip: rect(0, 1200px, 20px, 0);
+            }
+            10% {
+              clip: rect(0, 1200px, 50px, 0);
+            }
+            15% {
+              clip: rect(0, 1200px, 80px, 0);
+            }
+            20% {
+              clip: rect(0, 1200px, 60px, 0);
+            }
+            25% {
+              clip: rect(0, 1200px, 40px, 0);
+            }
+            30% {
+              clip: rect(0, 1200px, 80px, 0);
+            }
+            35% {
+              clip: rect(0, 1200px, 60px, 0);
+            }
+            40% {
+              clip: rect(0, 1200px, 20px, 0);
+            }
+            45% {
+              clip: rect(0, 1200px, 30px, 0);
+            }
+            50% {
+              clip: rect(0, 1200px, 80px, 0);
+            }
+            55% {
+              clip: rect(0, 1200px, 20px, 0);
+            }
+            60% {
+              clip: rect(0, 1200px, 50px, 0);
+            }
+            65% {
+              clip: rect(0, 1200px, 40px, 0);
+            }
+            70% {
+              clip: rect(0, 1200px, 80px, 0);
+            }
+            75% {
+              clip: rect(0, 1200px, 60px, 0);
+            }
+            80% {
+              clip: rect(0, 1200px, 20px, 0);
+            }
+            85% {
+              clip: rect(0, 1200px, 30px, 0);
+            }
+            90% {
+              clip: rect(0, 1200px, 80px, 0);
+            }
+            95% {
+              clip: rect(0, 1200px, 20px, 0);
+            }
+            100% {
+              clip: rect(0, 1200px, 0, 0);
+            }
+          }
+        </style>
+        
       <p class="text-lg md:text-xl text-gray-300 mt-4">
         Your one-stop solution for all your web needs
       </p>
     </header>
 
     <main class="container mx-auto px-4">
+      <!-- -----------------------------Developer  intro section ------------------------------------ -->
       <section>
-        <div><h1 class=" text-3xl text-yellow-400 font-bold text-center pb-5"><  Developers ../></h1></div>
-       <div class=" flex justify-around">
-           <div class=" flex gap-20">
-                <div>
-                  <img
-                    src="https://avatars.githubusercontent.com/u/121452952?v=4"
-                    alt="Redwan Ahmed" class=" w-52 mx-auto rounded-md border-2 border-white"
-                  />
-                  <div class=" text-center">
-                    <h1 class=" text-xl font-bold">Redwan Ahmed Tapu</h1>
-                    <h1 class=" text-yellow-400">Next.js & MERN stack Expert</h1>
-                    <p>BSc in Computer Science and Engineering (3rd year)</p>
-                    <p class=" font-extrabold">Faridpur Engineering College</p>
-        
-                  </div>
-                 <div class="flex justify-around ">
-                      <div class=" flex gap-3 items-center py-5">
-                        <a href="https://redwan-portfolio.onrender.com/" target="_blank" class="font-bold  text-yellow-400">Portfolio</a>
-                        <hr>
-                        <a href="https://github.com/RedwanAhmedTapu" target="_blank" class="font-bold text-sm text-yellow-400"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="bg-white rounded-full w-8 p-1"/></a>
-                        <hr>
-                        <a href="https://www.facebook.com/coderRedwan" target="_blank" class="font-bold text-sm text-yellow-400"><img src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png" class="bg-white rounded-md w-8"/></a>
-                        <hr>
-                        <a href="https://www.linkedin.com/in/redwan-tapu/" target="_blank" class="font-bold text-sm text-yellow-400"><img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" class="bg-white rounded-full w-8"/></a>
-                        
-                        
-                        
-                      </div>
-                 </div>
+        <div>
+          <h1 class="text-3xl text-yellow-400 font-bold text-center pb-5">
+            < Developers ../>
+          </h1>
+        </div>
+        <div class="flex justify-around">
+          <div class="flex gap-20">
+            <div>
+              <img
+                src="https://avatars.githubusercontent.com/u/121452952?v=4"
+                alt="Redwan Ahmed"
+                class="w-52 mx-auto rounded-md border-2 border-white"
+              />
+              <div class="text-center">
+                <h1 class="text-xl pt-3 font-bold">Redwan Ahmed Tapu</h1>
+                <h1 class="text-yellow-400">Next.js & MERN stack Expert</h1>
+                <p>BSc in Computer Science and Engineering (3rd year)</p>
+                <p class="font-extrabold">Faridpur Engineering College</p>
+              </div>
+              <div class="flex justify-around">
+                <div class="flex gap-3 items-center py-5">
+                  <a
+                    href="https://redwan-portfolio.onrender.com/"
+                    target="_blank"
+                    class="font-bold text-yellow-400 hover:scale-110 transition-transform duration-300"
+                    >Portfolio</a
+                  >
+                  <hr />
+                  <a
+                    href="https://github.com/RedwanAhmedTapu"
+                    target="_blank"
+                    class="font-bold text-sm text-yellow-400"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      class="bg-white rounded-full w-8 p-1 hover:scale-110 transition-transform duration-300"
+                  /></a>
+                  <hr />
+                  <a
+                    href="https://www.facebook.com/coderRedwan"
+                    target="_blank"
+                    class="font-bold text-sm text-yellow-400"
+                    ><img
+                      src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png"
+                      class="bg-white rounded-md w-8 hover:scale-110 transition-transform duration-300"
+                  /></a>
+                  <hr />
+                  <a
+                    href="https://www.linkedin.com/in/redwan-tapu/"
+                    target="_blank"
+                    class="font-bold text-sm text-yellow-400"
+                    ><img
+                      src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
+                      class="bg-white rounded-full w-8 hover:scale-110 transition-transform duration-300"
+                  /></a>
                 </div>
-                <div>
-                  <img
-                    src="https://avatars.githubusercontent.com/u/119003048?v=4"
-                    alt="Joy Sutradhar" class="border-2 border-white w-52 mx-auto rounded-md"
-                  />
-                  <div class=" text-center">
-                    <h1 class=" text-xl font-bold"> Joy Sutradhar</h1>
-                    <h1 class=" text-yellow-400">MERN stack Developer</h1>
-                    <p>BSc in Computer Science and Engineering (3rd year)</p>
-                    <p class=" font-extrabold">Faridpur Engineering College</p>
-        
-                  </div>
-                  <div class="flex justify-around ">
-                    <div class=" flex gap-3 items-center py-5">
-                      <a href="https://joysd-portfolio.netlify.app/" target="_blank" class="font-bold  text-yellow-400">Portfolio</a>
-                      <hr>
-                      <a href="https://github.com/Joysd1010" target="_blank" class="font-bold text-sm text-yellow-400"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="bg-white rounded-full w-8 p-1"/></a>
-                      <hr>
-                      <a href="https://www.facebook.com/profile.php?id=100045270344484" target="_blank" class="font-bold text-sm text-yellow-400"><img src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png" class="bg-white rounded-md w-8"/></a>
-                      <hr>
-                      <a href="https://www.linkedin.com/in/joy-sutradhar-099095205/" target="_blank" class="font-bold text-sm text-yellow-400"><img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" class="bg-white rounded-full w-8"/></a>
-                      
-                      
-                      
-                    </div>
-               </div>
-                </div>
-                
-           </div>
-       </div>
-      </section>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://avatars.githubusercontent.com/u/119003048?v=4"
+                alt="Joy Sutradhar"
+                class="border-2 border-white w-52 mx-auto rounded-md"
+              />
+              <div class="text-center">
+                <h1 class="text-xl pt-3 font-bold">Joy Sutradhar</h1>
+                <h1 class="text-yellow-400">MERN stack Developer</h1>
+                <p>BSc in Computer Science and Engineering (3rd year)</p>
+                <p class="font-extrabold">Faridpur Engineering College</p>
+              </div>
+              <div class="flex justify-around">
+                <div class="flex gap-3 items-center py-5">
+                  <a
+                    href="https://joysd-portfolio.netlify.app/"
+                    target="_blank"
+                    class="font-bold text-yellow-400 hover:scale-110 transition-transform duration-300  "
+                    >Portfolio</a
+                  >
+                  <hr />
+                  <a
+                    href="https://github.com/Joysd1010"
+                    target="_blank"
+                    class="font-bold text-sm text-yellow-400"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      class="bg-white rounded-full w-8 p-1 hover:scale-110 transition-transform duration-300"
+                  /></a>
+                  <hr />
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100045270344484"
+                    target="_blank"
+                    class="font-bold text-sm text-yellow-400"
+                  >
+                    <img
+                      src="https://static.vecteezy.com/system/resources/previews/023/986/999/non_2x/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png"
+                      class="bg-white rounded-md w-8 hover:scale-110 transition-transform duration-300"
+                    />
+                  </a>
 
-      <section class="my-10">
-        <h2
-          class="text-center text-2xl md:text-3xl font-semibold text-white mb-6"
-        >
-          E-commerce Solutions
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="https://via.placeholder.com/300"
-              alt="E-commerce 1"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg md:text-xl font-bold">
-                E-commerce Platform 1
-              </h3>
-              <p class="text-gray-700 mt-2">
-                A comprehensive solution for your online store.
-              </p>
-            </div>
-          </div>
-          <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="https://via.placeholder.com/300"
-              alt="E-commerce 2"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg md:text-xl font-bold">
-                E-commerce Platform 2
-              </h3>
-              <p class="text-gray-700 mt-2">
-                Boost your sales with our advanced tools.
-              </p>
-            </div>
-          </div>
-          <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="https://via.placeholder.com/300"
-              alt="E-commerce 3"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg md:text-xl font-bold">
-                E-commerce Platform 3
-              </h3>
-              <p class="text-gray-700 mt-2">
-                User-friendly interface for seamless shopping.
-              </p>
+                  <hr />
+                  <a
+                    href="https://www.linkedin.com/in/joy-sutradhar-099095205/"
+                    target="_blank"
+                    class="font-bold text-sm text-yellow-400"
+                    ><img
+                      src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
+                      class="bg-white rounded-full w-8 hover:scale-110 transition-transform duration-300"
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- -----------------------------Developer  intro section ------------------------------------ -->
 
-      <section class="my-10">
-        <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6">
-          Development Links
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
-            <div class="p-4">
-              <h3 class="text-lg md:text-xl font-bold">GitHub Repository</h3>
-              <p class="text-gray-700 mt-2">Find the source code on GitHub.</p>
-              <a
-                href="https://github.com/your-repo"
-                class="text-blue-500 mt-4 inline-block"
-                >Visit GitHub</a
-              >
+      <!-- -----------------------------E-commerce  section ------------------------------------ -->
+      <section>
+        <div>
+          <h1 class="text-center text-yellow-400 font-bold pt-16 text-2xl">
+            E-commerce Solution for you
+          </h1>
+          <p class="text-yellow-400 text-3xl pb-10 text-center">
+            ......................................
+          </p>
+        </div>
+
+        <div class=" grid grid-cols-1 md:grid-cols-3 items-center md:mx-5 gap-5 ">
+          <div class=" p-1 rounded-md ">
+            <img src="https://i.postimg.cc/wxn9VBXz/jt-Vi-AHb2-T6q89p3-YM13e-GQ.png" alt="" class=" w-96 h-52 rounded-md " />
+            <h1 class=" text-center font-bold text-lg ">Galaxy Tech</h1>
+            <div class=" flex justify-between py-2 items-center">
+               <a href="https://galaxytech-jsd.netlify.app/" target="_blank"> <button class=" px-3 py-1 bg-white text-blue-950 font-bold rounded-md ">Visit website</button></a>
+                <div class="flex gap-2 px-2 items-center">
+                    <h1 class="px-2 py-1 bg-white text-blue-950 font-bold rounded-md"> price: </h1>
+                    <h1 class=" text-yellow-400">30000৳</h1>
+                </div>
+
+            </div>
+           
+          </div>
+          <div>
+            <img src="https://i.postimg.cc/254QVncc/VQNERwwe-TSyz-VOva25-R-Gw.png" alt="" class=" w-96 rounded-md " />
+            <div class=" flex justify-between">
+                <button class=" px-3 py-1 ">Visit website</button>
+                <div>
+                    <h1>20000৳</h1>
+                </div>
             </div>
           </div>
-          <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
-            <div class="p-4">
-              <h3 class="text-lg md:text-xl font-bold">Live Demo</h3>
-              <p class="text-gray-700 mt-2">
-                Check out the live version of our service.
-              </p>
-              <a
-                href="https://your-live-demo-link.com"
-                class="text-blue-500 mt-4 inline-block"
-                >View Live Demo</a
-              >
+          <div>
+            <img src="https://i.postimg.cc/254QVncc/VQNERwwe-TSyz-VOva25-R-Gw.png" alt="" class=" w-96 rounded-md " />
+            <div class=" flex justify-between">
+                <button class=" px-3 py-1">Visit website</button>
+                <div>
+                    <h1>20000৳</h1>
+                </div>
             </div>
           </div>
         </div>
+
       </section>
+      
     </main>
+
+    <!-- ---------------------------------- Whatsapp Contact ----------------------------- -->
+
+    <a href="https://wa.me/+8801816940781" target="_blank" class="fixed z-20 right-20 bottom-10 animate-bounce">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" class="w-16" alt="contact">
+    </a>
+    
+
+    <!----------------------------------------- Modal() method ------------------------------->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box text-center md:w-[700px] text-blue-950 bg-white">
+    <h3 class="text-lg font-bold text-center">স্বাগতম</h3>
+    <p class="py-4">আপনি আপনার পছন্দের যেকোনো ডিজাইনের ওয়েবসাইট বানাতে পারেন আমাদের দিয়ে। এছাড়াও এখান থেকে যেকোনো ডিজাইন পছন্দ করে সেটিও নিজের মত পরিবরতন করে নিতে পারেন।<br><br> সকল ওয়েবসাইটে পাচ্ছেন এডমিন প্যানেল ও কমপ্লিট সোর্স কোড এর সুবিধা যাতে যেকোনো সময় আপনার সাইট আপনি নিজেও পরিবর্তন করতে পারেন।</p>
+    <div class="modal-action">
+      <div class="mx-auto ">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn bg-white hover:bg-yellow-400 text-blue-950">ok</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</dialog>
+<script src="./script.js"></script>
   </body>
 </html>
