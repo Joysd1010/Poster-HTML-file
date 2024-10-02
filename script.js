@@ -3,4 +3,4 @@ function openModal() {
   modal.showModal()
 }
 
-openModal();
+// openModal();
